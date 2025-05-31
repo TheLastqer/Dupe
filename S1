@@ -1,0 +1,41 @@
+	local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+	local Window = Library:NewWindow("FxZ")
+	
+	local Tab = Window:NewSection("Credits: ZYRO")
+
+	Tab:CreateToggle("INF GODZILLA", function(no)
+	_G.GetWins = no
+	while _G.GetWins== true do
+		wait() 
+local args = {
+	"Get_EGG",
+	"Godzilla"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("R_Server"):FireServer(unpack(args))
+		
+	end
+	end)
+
+	Tab:CreateToggle("INF SPIN", function(no)
+	_G.GetWins = no
+	while _G.GetWins== true do
+		wait() 
+local args = {
+	"GiveSpin",
+	999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("R_Server"):FireServer(unpack(args))
+		
+	end
+	end)
+
+
+	local Tab = Window:NewSection("Join Discord")
+	
+	Tab:CreateButton("Discord", function()
+	print("HI")
+	
+	setclipboard("https://discord.gg/f9CEfBPJ")
+	toclipboard("https://discord.gg/f9CEfBPJ")
+	
+	end)
